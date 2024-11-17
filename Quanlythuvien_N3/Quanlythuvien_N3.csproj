@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E8E0C36-7963-4E75-98FC-1274BDB46F38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quanlythuvien_N3</RootNamespace>
+    <AssemblyName>Quanlythuvien_N3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmhoivien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhoivien.Designer.cs">
+      <DependentUpon>frmhoivien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmthuthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmthuthu.Designer.cs">
+      <DependentUpon>frmthuthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsuatacgiacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsuatacgiacs.Designer.cs">
+      <DependentUpon>frmsuatacgiacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsuatailieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsuatailieu.Designer.cs">
+      <DependentUpon>frmsuatailieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtacgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtacgia.Designer.cs">
+      <DependentUpon>frmtacgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtailieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtailieu.Designer.cs">
+      <DependentUpon>frmtailieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmthemtacgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmthemtacgia.Designer.cs">
+      <DependentUpon>frmthemtacgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmthemtailieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmthemtailieu.Designer.cs">
+      <DependentUpon>frmthemtailieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtimkiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtimkiem.Designer.cs">
+      <DependentUpon>frmtimkiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xulydulieu.cs" />
+    <EmbeddedResource Include="frmthuthu.resx">
+      <DependentUpon>frmthuthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsuatacgiacs.resx">
+      <DependentUpon>frmsuatacgiacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsuatailieu.resx">
+      <DependentUpon>frmsuatailieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtacgia.resx">
+      <DependentUpon>frmtacgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtailieu.resx">
+      <DependentUpon>frmtailieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmthemtacgia.resx">
+      <DependentUpon>frmthemtacgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmthemtailieu.resx">
+      <DependentUpon>frmthemtailieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtimkiem.resx">
+      <DependentUpon>frmtimkiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
